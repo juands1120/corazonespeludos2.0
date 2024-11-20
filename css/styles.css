@@ -1,0 +1,638 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+}
+/*SECCION HEADER*/
+header{
+    width: 100%;
+    min-height: 100vh;
+    background: url(../img/foto-header2.png);
+    background-size: cover;
+    padding-top: 50px;
+}
+header nav{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul a{
+    color: #7ec0d8;
+    font-size: 22PX;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px 10px;
+    transition: .4s;
+}
+
+nav ul a:hover{
+    border-bottom: 1px solid #FFFF;
+}
+
+#hero{
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+    padding-top: 200px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#hero .container{
+    width: 600px;
+    text-align: center;
+    padding: 40px;
+}
+
+#hero h2{
+    color: #7ec0d8;
+    font-size: 60px;
+    font-weight: 500;
+}
+#hero h2 b{
+    color: #f9d067;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+#hero h1{
+    color: #FFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+#hero button{
+    background-color: #7ec0d8;
+    color: #000f;
+    border: none;
+    padding: 10px 50px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+#hero button:hover{
+    background-color: #f9d067;
+}
+
+main {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/*SECCION PRINCIPAL NOSOTROS*/
+#nosotros {
+    height: 100%;
+    background: linear-gradient(45deg, #f9d067, #7ec0d8,#295469); 
+    background-size: 400% 400%;
+    animation: gradient 12s ease-in infinite;
+    padding: 40px; 
+    max-width: 100%; 
+    margin: auto; 
+    text-align: center; 
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+}
+
+.contenedor-flex {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 50px;
+    align-items: center;
+}
+
+.columna-texto {
+    flex: 1;
+    text-align: left;
+}
+
+.columna-texto h2 {
+    font-size: 50px;
+    color: #295469;
+    margin-bottom: 30px;
+}
+
+.columna-texto p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.misionyvision {
+    margin-top: 40px;
+}
+
+.misionyvision h3 {
+    font-size: 30px;
+    color: #295469;
+    margin-bottom: 15px;
+}
+
+.misionyvision p {
+    font-size: 20px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.columna-imagen {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.columna-imagen img {
+    width: 100%;
+    max-width: 600px; /* Aumentado de 500px a 600px */
+    height: 600px; /* Altura fija para que coincida con el texto */
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .contenedor-flex {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .columna-texto {
+        text-align: center;
+    }
+
+    .columna-imagen img {
+        max-width: 100%;
+    }
+}
+
+/* SECCION ADOPTA */
+#adopta {
+
+    background: url(../img/bg-historias.png);
+    background-color: #f9d067d9;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+
+#adopta h2{
+    color: #295469;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+
+article {
+    background-color: #ffffff88;
+    color: #333;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: 300ms;
+}
+
+article img:hover{
+    transform: scale(1.1);
+}
+
+
+article h3 {
+    font-size: 20px;
+    color: #295469;
+    margin: 10px 0;
+}
+
+
+article p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #000;
+}
+
+article #btn1{
+    background-color: #295469;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+article #btn2{
+    background-color: #295469;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+article #btn3{
+    background-color: #295469;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.3s;
+}
+article #btn4{
+    background-color: #295469;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+article #btn1:hover {
+    background-color: #f9d067;
+}
+
+article #btn2:hover {
+    background-color: #f9d067;
+}
+
+article #btn3:hover {
+    background-color: #f9d067;
+}
+
+article #btn4:hover {
+    background-color: #f9d067;
+}
+
+/*SECCION DONACIONES*/
+#donaciones {
+    height: 100%;
+    background: linear-gradient(45deg, #f9d067, #7ec0d8,#295469); 
+    background-size: 400% 400%;
+    animation: gradient 12s ease-in infinite;
+    padding: 40px; 
+    max-width: 100%; 
+    margin: auto; 
+    text-align: center; 
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+
+}
+
+.donaciones-contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.donaciones-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.donaciones-header h2 {
+    font-size: 40px;
+    color: #295469;
+    margin-bottom: 20px;
+}
+
+.descripcion-principal {
+    font-size: 22px;
+    color:#295469;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.formas-ayudar {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.tarjeta-ayuda {
+    background: #ffffff88;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-ayuda:hover {
+    transform: translateY(-5px);
+}
+
+.tarjeta-ayuda i {
+    font-size: 40px;
+    color: #295469;
+    margin-bottom: 20px;
+}
+
+.tarjeta-ayuda h3 {
+    color: #295469;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-ayuda p {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.detalles-ayuda h4 {
+    color: #295469;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.detalles-ayuda ul {
+    list-style: none;
+    padding: 0;
+}
+
+.detalles-ayuda ul li {
+    color: #666;
+    margin-bottom: 8px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.detalles-ayuda ul li:before {
+    content: "•";
+    color: #295469;
+    position: absolute;
+    left: 0;
+}
+
+.contacto-donaciones {
+    text-align: center;
+    background: #ffffff88;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contacto-donaciones h3 {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.info-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.info-contacto p {
+    color: #666;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.info-contacto i {
+    color: #295469;
+}
+
+@media (max-width: 768px) {
+    .info-contacto {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .formas-ayudar {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*CSS HISTORIAS*/
+#historias { 
+    background: url(../img/bg-historias.png);
+    background-color: #f9d067;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.historias-titulo {
+    margin-top: 5px;
+    color: #295469;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.historias-contenido {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.historias-contenido .historia {
+    background-color: rgba(255, 255, 255, 0.792);
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: left;
+}
+
+.historias-contenido .historia img {
+    width: 100%;
+    height: auto;
+}
+
+.historias-contenido .historia-titulo {
+    font-size: 1.2em;
+    color: #333;
+    margin: 15px 20px 5px 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.historias-contenido .historia-descripcion {
+    color: #666;
+    font-size: 0.9em;
+    line-height: 1.5;
+    margin: 0 20px 15px 20px;
+}
+
+
+/*SECCION DE CONTACTO*/
+#Contacto {
+    height: 100%;
+    background: linear-gradient(45deg, #f9d067, #7ec0d8,#295469); 
+    background-size: 400% 400%;
+    animation: gradient 12s ease-in infinite;
+    padding: 40px; 
+    border-radius: 10px; 
+    max-width: 100%; 
+    margin: auto; 
+    text-align: center; 
+}
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+#Contacto h2 {
+    font-size: 32px; 
+    color: #295469; 
+    margin-bottom: 10px; 
+}
+#Contacto p {
+    font-size: 20px; 
+    color: #333; 
+    margin-bottom: 30px; 
+}
+#Contacto form {
+    display: flex;
+    flex-direction: column; 
+    gap: 15px; 
+}
+.fila {
+    display: flex; 
+    gap: 10px; 
+    justify-content: center; 
+}
+.fila input, .fila select {
+    width: 100%; 
+    max-width: 270px; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #295469; 
+    border-radius: 5px; 
+    outline: none; 
+    transition: border-color 0.3s; 
+}
+.fila input:focus, .fila select:focus {
+    border-color: #7ec0d89a; 
+}
+button {
+    display: block; /* Hace que el botón se comporte como un bloque */
+    width: fit-content; /* Hace que el ancho se ajuste al contenido */
+    margin: 40px auto; /* Centra el botón horizontalmente y mantiene el margen superior */
+    background: #295469;
+    color: #FFFF;
+    font-size: 22px;
+    padding: 10px 40px;
+    border-radius: 8px;
+    border: transparent;
+}
+button:hover {
+    background-color: #e0b54e;
+}
+.contacto-container {
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+}
+.contacto-content {
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    padding: 0 20px;
+}
+.mascota-izquierda,
+.mascota-derecha {
+    width: 35%;
+    max-width: 400px;
+    opacity: 1;
+    position: absolute;
+    bottom: 0;
+}
+.mascota-izquierda {
+    left: 0;
+}
+.mascota-derecha {
+    right: 0;
+}
+@media (max-width: 768px) {
+    .mascota-izquierda,
+    .mascota-derecha {
+        display: none;
+    }
+
+    .contacto-content {
+        width: 100%;
+    }
+}
+
+/*SECCION PIE DE PAGINA*/
+footer{
+    width: 100%;
+    position: relative;
+    padding: 60px 0;
+    background: #000;
+    color: #FFFF;
+    text-align: center;
+}
